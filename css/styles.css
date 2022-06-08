@@ -1,55 +1,142 @@
-*{ 
+* {
 
     margin: 0;
-    
+
     padding: 0;
-    
-    }
+
+}
 
 /* HEADER*/
 
-header{   
+
+.coral {
+    background-color: coral;
+}
+
+.barra__responsive {
+    display: none;
+}
+
+
+.menu {
+    background-color: coral;
+    height: 75px;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-image: url(../IMG/Sin\ título.jpg);
-    background-position: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-align-items: flex-end;
-
-grid-area: header;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6)
 }
 
-.header__logo{
-    height: 100px;
-   
+.logo {
+    color: antiquewhite;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+
 }
 
-.header__enlaces {
-list-style: none; 
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-width: 50%;
+.menu__item {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
 }
 
-
-.header__link{
-display: inline-block;
-margin: 40px 20px;
-background-color: lightblue;
+.menu__item li {
+    border-radius: 3px;
+    margin: 0 5px;
 }
 
-.header__link:hover{
-    transform: scale(1.3);
-    transition: all 2s;
+.menu__item li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu__item li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.btn__menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 960px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 35px;
     }
 
-a{
-    color: black;
-    text-decoration: none;
+    .menu__item {
+        font-size: 16px;
+    }
 }
 
+@media screen and (max-width: 850px) {
+    .barra__responsive {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .btn__menu {
+        display: inline-flex;
+    }
+
+    .menu__item {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu__item li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu__item li:hover {
+        background: none;
+    }
+
+    .menu__item li a {
+        font-size: 20px;
+        color: antiquewhite;
+        font-weight: bold;
+    }
+
+    .menu__item li a:hover {
+        color: black;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+    
+}
 
 
 /* Body de las paginas*/
@@ -59,72 +146,76 @@ a{
 
 
 
-.grid__area{
-display: grid;
-grid-template-columns: 70vw 30vw;
-grid-template-rows: 1fr;
-grid-template-areas:
-"header header "
-"picture section"
-"footer footer";
+.grid__area {
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "header header "
+        "picture section"
+        "footer footer";
 }
 
-.main__principal{
+.main__principal {
     padding: 1rem;
 }
 
-.index__imagen{
-    grid-area: picture; 
+.index__imagen {
+    grid-area: picture;
     padding: 2rem;
-      
+
 }
 
-.index__texto{
+.index__texto {
     grid-area: section;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     padding: 2rem;
-    }
+}
 
-    
-.tituloPrincipal{
+.servicios{flex-wrap: wrap;
+
+}
+
+.tituloPrincipal {
     font-size: 80px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: darkblue;
-    margin-left: 500px  
-}
+    margin: 0 auto;
+    }
 
-.servicios__titulos{
+
+.servicios__titulos {
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: coral;
     margin: 3px;
 }
 
-.cuerpo__imagen{
-    padding-left:  300px;
+.cuerpo__imagen {
+    padding-left: 300px;
 }
 
-.cuerpo__texto{
+.cuerpo__texto {
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.textoDescriptivo{
+.textoDescriptivo {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
-.quienesSomos__imagen{
+.quienesSomos__imagen {
     margin-left: 600px;
 }
 
-.contacto{
+.contacto {
     background-color: aquamarine;
 }
 
-label{
+label {
     margin: 10px;
     display: block;
 }
@@ -132,7 +223,7 @@ label{
 
 /* BODY GALERIA */
 
-.galeria{
+.galeria {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: repeat(3, 300px);
@@ -141,24 +232,24 @@ label{
     gap: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
-    
+
 }
 
-.galeria__imagen1{
+.galeria__imagen1 {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
     background-image: url(../IMG/grid\ galeria\ horizontal\ 1.jpg);
     background-size: cover
 }
 
-.galeria__imagen2{
-    grid-column: 4 / 5 ;
-    grid-row: 1 / 3;      
+.galeria__imagen2 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
     background-image: url(../IMG/grid\ galeria\ vertical\ 1.jpg);
     background-size: cover
 }
 
-.galeria__imagen3{
+.galeria__imagen3 {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     background-image: url(../IMG/grid\ galeria\ normal\ 4.jpg);
@@ -166,57 +257,55 @@ label{
 
 }
 
-.galeria__imagen4{
-    grid-column: 3 / 4 ; 
-    grid-row: 2 / 3 ;
+.galeria__imagen4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
     background-image: url(../IMG/catering\ 6.png);
     background-size: cover
 }
 
-.galeria__imagen5{
-    grid-column: 1 / 2 ; 
+.galeria__imagen5 {
+    grid-column: 1 / 2;
     grid-row: 3 / 4;
     background-image: url(../IMG/grid\ galeria\ normal\ 3.jpg);
     background-size: cover
 }
 
-.galeria__imagen6{
-    grid-column: 2 / 5 ;
-    grid-row: 3 / 4 ;
+.galeria__imagen6 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
     background-image: url(../IMG/grid\ galeria\ horizontal\ 3.jpg);
     background-size: cover;
     background-position: bottom;
 }
 
+/* Body Servicios*/
+
 
 /* Footer de la pagina*/
-.footer{
-   background-color: darksalmon;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   height: 200px;
-   grid-area: footer;
+.footer {
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    grid-area: footer;
 }
 
-.footer__logo{
-    margin-top: 25px   
-    
+.footer__logo {
+    margin-top: 25px
 }
 
-.footer__redes{
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-width: 25%;
-align-items: center;
+.footer__redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 25%;
+    align-items: center;
 }
 
-.footer__redes:hover{
+.footer__redes:hover {
     transform: scale(1.3);
     transition: all 2s;
-    }
-
-
-
+}

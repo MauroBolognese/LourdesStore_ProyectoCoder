@@ -17,30 +17,39 @@
  </head>
 
 <body>
-        <header>
-        <div>
-            <img class="header__logo" src="./IMG/Logo.png" alt="">
-        </div>
-        <nav class="header__enlaces">
-            <ul class="nav">
-                <li class="header__link nav-item p-4">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="header__link nav-item p-4">
-                    <a href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li class="header__link nav-item p-4">
-                    <a href="./pages/galeria.html">Galeria</a>
-                </li>
-                <li class="header__link nav-item p-4">
-                    <a href="./pages/quienes somos.html">Quienes Somos</a>
-                </li>
-                <li class="header__link nav-item p-4">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="menu">
+          <label class="logo">Lourdes Store</label>
+          <ul class="menu__item">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Pages/servicios.html">servicio</a></li>
+            <li><a href="./Pages/galeria.html">galeria</a></li>
+            <li><a href="./Pages/quienes somos.html">quienes somos</a></li>
+            <li><a href="./Pages/contacto.html">contacto</a></li>
+          </ul>
         </nav>
-    </header>
+        <div class="barra__responsive">
+          <div class="collapse" id="navbarToggleExternalContent">
+              <div class="coral p-4">
+                <li class="text-white h6"><a href="./index.html">Home</a></li>
+                <li class="text-white h6"><a href="./pages/servicios.html">servicio</a></li>
+                <li class="text-white h6"><a href="./pages/galeria.html">galeria</a></li>
+                <li class="text-white h6"><a href="./pages/quienes somos.html somos.html">quienes somos</a></li>
+                <li class="text-white h6"><a href="./pages/contacto.html">contacto</a></li>
+                  <span class="text-muted"></span>
+              </div>
+          </div>
+          <nav class="navbar navbar-dark coral">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+          </nav>
+      </div>
+      </header>
 
     <main class="grid__area main__principal">
         <picture class="index__imagen">
