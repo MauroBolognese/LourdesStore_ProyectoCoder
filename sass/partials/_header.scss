@@ -1,0 +1,66 @@
+.coral {
+    background-color: $primary;
+}
+
+.barra__responsive {
+    display: none;
+}
+
+
+.menu {
+    background-color: coral;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+
+    &__item {
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+
+        li {
+            border-radius: 3px;
+            margin: 0 5px;
+
+            a {
+                padding: 7px 13px;
+                text-decoration: none;
+                font-size: 18px;
+                display: block;
+                text-transform: uppercase;
+                color: black;
+
+            }
+        }
+
+    }
+
+}
+
+.menu__item li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.logo {
+    color: antiquewhite;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.btn__menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}

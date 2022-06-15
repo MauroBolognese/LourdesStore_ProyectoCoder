@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <!-- bootstrap via CDN-->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+  <!-- HEADER DE LA PAGINA-->
+  <header>
+    <nav class="menu">
+      <label class="logo">Lourdes Store</label>
+      <ul class="menu__item">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./servicios.html">servicio</a></li>
+        <li><a href="./galeria.html">galeria</a></li>
+        <li><a href="./quienes somos.html">quienes somos</a></li>
+        <li><a href="./contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+    <div class="barra__responsive">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="coral p-4">
+          <li class="text-white h6"><a href="../index.html">Home</a></li>
+          <li class="text-white h6"><a href="./servicios.html">servicio</a></li>
+          <li class="text-white h6"><a href="./galeria.html">galeria</a></li>
+          <li class="text-white h6"><a href="./quienes somos.html">quienes somos</a></li>
+          <li class="text-white h6"><a href="./contacto.html">contacto</a></li>
+          <span class="text-muted"></span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark coral">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- FIN DEL HEADER DE LA PAGINA-->
+
+  <!--CUERPO DE QUIENES SOMOS-->
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <H1 class="tituloPrincipal">Quienes somos</H1>
+  <section class="quienesSomos">
+    <img class="quienesSomos__imagen" src="../../IMG/quienes somos.jpg" alt="">
+    <p class="textoDescriptivo">Lourdes Store nace como una empresa familiar, y desde los comienzos hasta a actualidad,
+      por casi 10 años nos dedicamos a brindar Servicios de Catering y Organización Integral para Eventos Empresariales,
+      Casamientos y Fiestas Familiares.
+
+      Somos profesionales en el rubro con el objetivo de realizar eventos de calidad que satisfagan a nuestros clientes
+      y nos posicionan en el mercado como una opción competitiva y de excelencia.</p>
+
+  </section>
+
+
+
+  <!-- FIN DE CUERPO DE QUIENES SOMOS-->
+
+
+  <!-- FOOTER DE LA PAGINA-->
+
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="../../IMG/Logo.png" alt="">
+    </div>
+    <ul class="footer__redes">
+      <li class="footer__link">
+        <a href="https://www.facebook.com"><img src="../../IMG/facebook-logo-24.png" alt=""></a>
+      </li>
+      <li class="footer__link">
+        <a href="https://www.instagram.com"><img src="../../IMG/instagram-logo-24.png" alt=""></a>
+      </li>
+      <li class="footer__link">
+        <a href="https://www.twitter.com"><img src="../../IMG/twitter-logo-24.png" alt=""></a>
+      </li>
+    </ul>
+  </footer>
+  <!-- FIN DE FOOTER DE LA PAGINA-->
+
+
+  <!-- script de bootstrap-->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

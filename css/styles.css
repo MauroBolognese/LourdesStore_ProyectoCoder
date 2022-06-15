@@ -1,4 +1,4 @@
-* {
+/* * {
 
     margin: 0;
 
@@ -6,10 +6,12 @@
 
 }
 
+ */
+
 /* HEADER*/
 
 
-.coral {
+/* .coral {
     background-color: coral;
 }
 
@@ -19,7 +21,7 @@
 
 
 .menu {
-    background-color: coral;
+    background-color: var(--primary);
     height: 75px;
     width: 100vw;
     display: flex;
@@ -73,8 +75,8 @@
 
 ul.show {
     top: 65px;
-}
-
+} */
+/* 
 @media screen and (max-width: 960px) {
     .logo {
         font-size: 30px;
@@ -135,18 +137,15 @@ ul.show {
         padding-left: 35px;
     }
 
-    
-}
 
+} */
 
 /* Body de las paginas*/
 
 
 /* BODY INDEX */
 
-
-
-.grid__area {
+/* .grid__area {
     display: grid;
     grid-template-columns: 70vw 30vw;
     grid-template-rows: 1fr;
@@ -171,24 +170,27 @@ ul.show {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     padding: 2rem;
-}
+} */
 
-.servicios{flex-wrap: wrap;
+/* Servicios  */
+
+/* .servicios {
+    flex-wrap: wrap;
 
 }
 
 .tituloPrincipal {
     font-size: 80px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: darkblue;
+    color: var(--title-color);
     margin: 0 auto;
-    }
+}
 
 
 .servicios__titulos {
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: coral;
+    color: var(--secondary);
     margin: 3px;
 }
 
@@ -205,9 +207,11 @@ ul.show {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-}
+} */
 
-.quienesSomos__imagen {
+/* Quienes Somos */
+
+/* .quienesSomos__imagen {
     margin-left: 600px;
 }
 
@@ -218,7 +222,7 @@ ul.show {
 label {
     margin: 10px;
     display: block;
-}
+} */
 
 
 /* BODY GALERIA */
@@ -283,8 +287,8 @@ label {
 
 
 /* Footer de la pagina*/
-.footer {
-    background-color: darksalmon;
+/* .footer {
+    background-color: var(--primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -308,4 +312,4 @@ label {
 .footer__redes:hover {
     transform: scale(1.3);
     transition: all 2s;
-}
+} */

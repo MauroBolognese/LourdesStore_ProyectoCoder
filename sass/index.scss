@@ -1,0 +1,19 @@
+
+/* Misc */
+@import './misc/variables';
+@import './misc/mediaqueries';
+@import './misc/normalize';
+
+/* Partials */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* Pages */
+
+@import './pages/home';
+@import './pages/galeria';
+@import './pages/servicios';
+@import './pages/quienessomos';
+@import './pages/contacto';
+

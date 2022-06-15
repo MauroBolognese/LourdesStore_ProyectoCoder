@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linkeo de estilos css-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- linkeo de libreria AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap via CDN-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <label class="logo">Lourdes Store</label>
+            <ul class="menu__item">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Pages/servicios.html">servicio</a></li>
+                <li><a href="./Pages/galeria.html">galeria</a></li>
+                <li><a href="./Pages/quienes somos.html">quienes somos</a></li>
+                <li><a href="./Pages/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        <div class="barra__responsive">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="--primary p-4">
+                    <li class="text-white h6"><a href="./index.html">Home</a></li>
+                    <li class="text-white h6"><a href="./pages/servicios.html">servicio</a></li>
+                    <li class="text-white h6"><a href="./pages/galeria.html">galeria</a></li>
+                    <li class="text-white h6"><a href="./pages/quienes somos.html somos.html">quienes somos</a></li>
+                    <li class="text-white h6"><a href="./pages/contacto.html">contacto</a></li>
+                    <span class="text-muted"></span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark coral">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="grid__area main__principal">
+        <picture class="index__imagen">
+            <img data-aos="fade-right" src="../IMG/catering 4.jpg" alt="">
+        </picture>
+
+        <section data-aos="fade-left" class="index__texto">
+            <p class="lead">Elaboramos productos de calidad ricos, sanos y saludables. Sentimos pasión por nuestro
+                trabajo y nos
+                esforzamos día a día para seguir creciendo un poco más.
+
+                Avalados por más de 5 años de trayectoria, proveemos servicios gastronómicos adecuados a las necesidades
+                específicas de cada cliente gracias a la evaluación de cada caso particular junto a nuestro equipo de
+                colaboradores.
+            </p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="../IMG/Logo.png" alt="">
+            </div>
+            <ul class="footer__redes">
+                <li class="footer__link">
+                    <a href="https://www.facebook.com"><img src="../IMG/facebook-logo-24.png" alt=""></a>
+                </li>
+                <li class="footer__link">
+                    <a href="https://www.instagram.com"><img src="../IMG/instagram-logo-24.png" alt=""></a>
+                </li>
+                <li class="footer__link">
+                    <a href="https://www.twitter.com"><img src="../IMG/twitter-logo-24.png" alt=""></a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+
+    <!-- script de bootstrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!-- linkeo de script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    !-- inicializamos aos -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
