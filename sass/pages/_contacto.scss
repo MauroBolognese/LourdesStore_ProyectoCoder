@@ -1,3 +1,4 @@
-.contacto {
-    background-color: aquamarine;
+.titulo__contacto{
+    @extend .tituloPrincipal;
+    color: #a1047f
 }

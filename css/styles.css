@@ -227,7 +227,7 @@ label {
 
 /* BODY GALERIA */
 
-.galeria {
+/* .galeria {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: repeat(3, 300px);
@@ -267,7 +267,7 @@ label {
     background-image: url(../IMG/catering\ 6.png);
     background-size: cover
 }
-
+ 
 .galeria__imagen5 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -281,7 +281,7 @@ label {
     background-image: url(../IMG/grid\ galeria\ horizontal\ 3.jpg);
     background-size: cover;
     background-position: bottom;
-}
+} */
 
 /* Body Servicios*/
 

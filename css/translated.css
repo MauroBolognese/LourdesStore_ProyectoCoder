@@ -1,5 +1,6 @@
 /* Misc */
 /* Colors */
+/* maps */
 @media screen and (max-width: 960px) {
   .logo {
     font-size: 30px;
@@ -114,6 +115,11 @@ ul.show {
   transform: scale(1.3);
   transition: all 2s; }
 
+.fondo__nubes {
+  background-image: url(../IMG/nubes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* Pages */
 .grid__area {
   display: grid;
@@ -134,6 +140,46 @@ ul.show {
   font-size: 25px;
   padding: 2rem; }
 
+.galeria {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: repeat(3, 300px);
+  max-width: 1300px;
+  margin: 0% auto;
+  gap: 15px;
+  padding: 1rem; }
+  .galeria__imagen1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-image: url(../IMG/gridh1.jpg);
+    background-size: cover; }
+  .galeria__imagen2 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-image: url(../IMG/gridv1.jpg);
+    background-size: cover; }
+  .galeria__imagen3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-image: url(../IMG/gridn4.jpg);
+    background-size: cover; }
+  .galeria__imagen4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url(../IMG/gridn6.png);
+    background-size: cover; }
+  .galeria__imagen5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-image: url(../IMG/gridn3.jpg);
+    background-size: cover; }
+  .galeria__imagen6 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    background-image: url(../IMG/gridh3.jpg);
+    background-size: cover;
+    background-position: bottom; }
+
 .servicios {
   flex-wrap: wrap; }
   .servicios__titulos {
@@ -152,20 +198,35 @@ ul.show {
 .textoDescriptivo {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #0c0a0b; }
+  color: #0c0a0b;
+  margin-bottom: 0%;
+  padding: 30px 30px; }
 
-.tituloPrincipal {
-  font-size: 80px;
+.tituloPrincipal, .titulo__contacto {
+  font-size: 60px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #080d25;
   margin: 0 auto; }
 
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0; }
+  .quienesSomos__imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
 .quienesSomos__imagen {
-  margin-left: 600px; }
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 label {
   margin: 10px;
   display: block; }
 
-.contacto {
-  background-color: aquamarine; }
+.titulo__contacto {
+  color: #a1047f; }

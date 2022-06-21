@@ -1,9 +1,23 @@
-.quienesSomos__imagen {
-    margin-left: 600px;
+.quienesSomos {
+    @include flex(column, center, center, 0); 
+       
+    &__imagen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
 }
 
+
+.quienesSomos__imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 
 label {
     margin: 10px;
     display: block;
-}
+}  
