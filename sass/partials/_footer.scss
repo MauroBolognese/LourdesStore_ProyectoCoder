@@ -1,13 +1,16 @@
 .footer {
-    background-color: $primary;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 200px;
-    grid-area: footer;
+    height: 150px;
+    box-shadow: 5px 0 10px rgba(255, 42, 219, 0.589);
 
+    
     &__logo {
-        margin-top: 25px
+        margin-top: 45px;
+        padding-left: 100px;
+        height: 100px;
     }
 
     &__redes {
