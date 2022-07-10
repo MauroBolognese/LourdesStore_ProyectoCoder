@@ -1,31 +1,3 @@
-/* .grid__area {
-    display: grid;
-    grid-template-columns: 70vw 30vw;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "header header "
-        "picture section"
-        "footer footer";
-
-}
-
-.main__principal {
-    padding: 1rem;
-}
-
-.index__imagen {
-    grid-area: picture;
-    padding: 2rem;
-
-}
-
-.index__texto {
-    grid-area: section;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    padding: 2rem;
-} */
-
 .index {
     display: flex;
     flex-direction: row;
@@ -44,7 +16,23 @@
 
 }
 
-/* @media screen and (max-width: 960px) {
+@media screen and (max-width: 1440px){
+     .index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .index__imagen{
+        width: 100%;
+        height: auto;
+     }
+     .index__texto{
+        font-size: 20px;
+     }
+}
+
+@media screen and (max-width: 960px) {
     .logo {
         font-size: 30px;
         padding-left: 35px;
@@ -107,4 +95,4 @@
     }
 
 
-} */
+}

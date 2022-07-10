@@ -49,5 +49,52 @@
         background-size: cover;
         background-position: bottom;
     }
-    
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .galeria {
+        max-width: 500px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+
+        &__imagen1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+        }
+
+        &__imagen2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+
+        }
+
+        &__imagen3 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+
+        }
+
+        &__imagen4 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+
+        }
+
+        &__imagen5 {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+
+        }
+
+        &__imagen6 {
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+
+        }
+
+    }
 }

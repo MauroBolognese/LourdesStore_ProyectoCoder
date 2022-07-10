@@ -1,23 +1,23 @@
 .quienesSomos {
-    @include flex(column, center, center, 0); 
-       
+    @include flex(column, center, center, 0);
+
     &__imagen {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 20px;
 
     }
-}
-
-
-.quienesSomos__imagen {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
 }
 
 label {
     margin: 10px;
     display: block;
-}  
+}
+
+@media screen and (max-width: 320px) {
+    .quienesSomos__imagen {
+        width: 300px;
+
+    }
+}

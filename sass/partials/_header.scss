@@ -2,10 +2,10 @@
     background-color: rgb(236, 193, 227) !important;
 }
 
-.black{
+.black {
     background-color: black;
-    
-    a{
+
+    a {
         color: rgb(236, 193, 227);
         font-size: 20px;
     }
@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-    box-shadow: 5px 0 10px rgba(255, 42, 219, 0.589);
+    box-shadow: 5px 0 10px rgba(253, 45, 218, 0.589);
 
     &__item {
         display: flex;
@@ -77,6 +77,18 @@
 
 ul.show {
     top: 65px;
+}
+
+@media screen and (max-width: 1290px) {
+    .menu {
+        margin: 0px;
+        width: 100vw;
+    }
+
+    .btn__menu {
+        margin-right: 0px;
+
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -139,13 +151,13 @@ ul.show {
         padding-left: 35px;
     }
 
-    
+
 }
 
-@media screen and (min-width: 850px){
+@media screen and (min-width: 850px) {
 
-.header__menuHamburgesa{
-    display: none;
-}
+    .header__menuHamburgesa {
+        display: none;
+    }
 
 }
